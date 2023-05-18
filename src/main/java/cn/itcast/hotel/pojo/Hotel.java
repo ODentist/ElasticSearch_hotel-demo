@@ -21,4 +21,5 @@ public class Hotel {
     private String longitude;
     private String latitude;
     private String pic;
+
 }

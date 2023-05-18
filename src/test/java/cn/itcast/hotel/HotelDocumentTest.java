@@ -83,7 +83,7 @@ public class HotelDocumentTest {
     void testGetDocumentById() throws IOException {
         //从ES那边拿
         //准备request
-        GetRequest request = new GetRequest("hotel", "61082");
+        GetRequest request = new GetRequest("hotel", "61083");
         GetResponse response = client.get(request, RequestOptions.DEFAULT);
         String json = response.getSourceAsString();
         HotelDoc hotelDoc = JSON.parseObject(json, HotelDoc.class);
